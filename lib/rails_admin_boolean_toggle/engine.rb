@@ -22,11 +22,11 @@ module RailsAdminBooleanToggle
             if read_only?
               return case value
                 when nil
-                  I18n.t('admin.toggle.undef')
+                  I18n.t('admin.toggle.pretty_undef')
                 when false
-                  I18n.t('admin.toggle.no')
+                  I18n.t('admin.toggle.pretty_no')
                 when true
-                  I18n.t('admin.toggle.yes')
+                  I18n.t('admin.toggle.pretty_yes')
                 else
                   value
               end

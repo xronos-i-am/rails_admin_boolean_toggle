@@ -1,6 +1,6 @@
 en:
   admin:
     toggle:
-      yes: Yes
-      no: No
-      undef: Undefined
+      pretty_yes: Yes
+      pretty_no: No
+      pretty_undef: Undefined

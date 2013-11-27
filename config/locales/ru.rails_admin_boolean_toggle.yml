@@ -1,6 +1,6 @@
 ru:
   admin:
     toggle:
-      yes: Да
-      no: Нет
-      undef: Не задано
+      pretty_yes: Да
+      pretty_no: Нет
+      pretty_undef: Не задано
