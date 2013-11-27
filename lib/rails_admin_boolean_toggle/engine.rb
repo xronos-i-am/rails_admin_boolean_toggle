@@ -18,16 +18,33 @@ module RailsAdminBooleanToggle
             )
           end
 
-          case value
-            when nil
-              g_link('&#x2718;', 0, 'badge-important') + g_link('&#x2713;', 1, 'badge-success')
-            when false
-              g_link('&#x2718;', 1, 'badge-important')
-            when true
-              g_link('&#x2713', 0, 'badge-success')
-            else
-              %{<span class="badge">-</span>}
-          end.html_safe
+          def out
+            if read_only?
+              return case value
+                when nil
+                  I18n.t('admin.toggle.undef')
+                when false
+                  I18n.t('admin.toggle.no')
+                when true
+                  I18n.t('admin.toggle.yes')
+                else
+                  value
+              end
+            end
+
+            case value
+              when nil
+                g_link('&#x2718;', 0, 'badge-important') + g_link('&#x2713;', 1, 'badge-success')
+              when false
+                g_link('&#x2718;', 1, 'badge-important')
+              when true
+                g_link('&#x2713', 0, 'badge-success')
+              else
+                %{<span class="badge">-</span>}
+            end
+          end
+
+          out.html_safe
         end
 
         register_instance_option :export_value do

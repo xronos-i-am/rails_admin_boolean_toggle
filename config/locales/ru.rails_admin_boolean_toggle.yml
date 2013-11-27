@@ -1,0 +1,6 @@
+ru:
+  admin:
+    toggle:
+      yes: Да
+      no: Нет
+      undef: Не задано

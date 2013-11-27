@@ -1,0 +1,6 @@
+en:
+  admin:
+    toggle:
+      yes: Yes
+      no: No
+      undef: Undefined
