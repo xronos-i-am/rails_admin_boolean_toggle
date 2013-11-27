@@ -1,12 +1,16 @@
 # RailsAdminBooleanToggle
 
-Replace default boolean field behaviour with toggleable (https://github.com/rs-pro/rails_admin_toggleable) in rails admin
+Replace default boolean field behaviour with toggleable (https://github.com/rs-pro/rails_admin_toggleable). So boolean field now looks like rails_admin_toggleable but filter and sorting also working.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
     gem 'rails_admin_boolean_toggle'
+
+Instead of:
+  
+    gem 'rails_admin_toggleable'
 
 And then execute:
 
@@ -16,7 +20,7 @@ Or install it yourself as:
 
     $ gem install rails_admin_boolean_toggle
 
-## Usage (rails_admin_toggleable)
+## Usage
 
 Add the toggleable action:
 
