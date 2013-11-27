@@ -11,6 +11,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{Boolean field behaviour replacement for rails admin}
   gem.summary       = %q{Replaces default boolean field behaviour with rails_admin_toggleable}
   gem.homepage      = "https://github.com/xronos-i-am/rails_admin_boolean_toggle"
+  gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
